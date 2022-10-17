@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family: poppins; */
+font-family: sans-serif;
+}
+body{
+background-color: #fff;
+background:url(../imgs/p6.jpg) no-repeat;
+background-size: cover;
+width: 100%;
+height: 100vh;}
+/* =================== */
+nav {
+display: flex;
+flex-direction: row;
+height: 50px;
+justify-content: space-between;
+align-items: center;
+padding: 3px 30px;
+}
+nav logo {
+color: #fff;
+font-weight: 900;
+font-size: 1.7rem;
+user-select: none;
+text-shadow: -4px 0px 7px rgba(0,0,0,0.6);
+
+}
+
+nav ul {
+list-style: none;
+display: inline-flex;
+flex-direction: row;
+justify-content: space-around;
+width: 40%;
+}
+
+nav ul li a {
+text-transform: uppercase;
+font-size: 16px;
+text-decoration: none;
+color: #33423c;
+position: relative;
+}
+nav ul li a:hover{
+transition: 1s ease-in-out;
+}
+nav ul li a::after{
+content: '';
+position: absolute;
+left: 50%;
+bottom: -5px;
+transform: translateX(-50%) scaleX(0);
+-webkit-transform: translateX(-50%) scaleX(0);
+transform-origin: 50% 50%;
+width: 100%;
+height: 2px;
+border-radius: 50px;
+background-color: #33423c;
+-webkit-transition: transform .6s ease-in-out;
+transition: transform .6s ease-in-out;
+}
+nav ul li a:hover::after
+{
+-webkit-transform: translateX(-50%) scaleX(1);
+transform: translateX(-50%) scaleX(1);
+}
+nav li a.active::after{
+-webkit-transform: translateX(-50%) scaleX(1);
+transform: translateX(-50%) scaleX(1);
+
+}
+nav li a.active{
+cursor: default;
+}
+/* =============== */
+sign-btn a{
+text-decoration: none;
+color: #33423c;
+font-size: 14px;
+line-height: 20px;
+border-radius: 50px;
+background-color: #fff;
+display: block;
+margin: 10px;
+padding: 5px 10px;
+transition: .5s ease-in-out;
+}
+sign-btn a:hover{
+transform:scale(1.05);
+
+}
+/* ================== */
+main{
+display: flex;
+flex-direction: row;
+flex-direction: row;
+margin: 60px 20px;
+justify-content: space-around;
+}
+
+content{
+display: flex;
+flex-direction: column;
+max-width: 600px;
+}
+content h1{
+color: #425F57;
+margin-bottom: 40px;
+
+text-shadow: -8px 0px 7px rgba(228,217,217,0.45);
+}
+content>p{
+font-size:15px;
+font-weight: bold;
+width: 450px;
+margin-bottom:20px;
+
+}
+
+video{
+
+background-color: #749f829a;
+backdrop-filter: blur(10px);
+grid-area: v1;
+width: 300px;
+height: 300px;
+/* margin: 0 30px; */
+border-radius: 20px;
+box-shadow: -25px 7px 17px 2px rgba(194,194,194,0.63);
+-webkit-box-shadow: -25px 7px 17px 2px rgba(194,194,194,0.63);
+-moz-box-shadow: -25px 7px 17px 2px rgba(194,194,194,0.63);
+}
+search-box{
+height: 50px;
+border-radius: 40px;
+padding:10px;
+background-color: #425F57;
+width: fit-content;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+#search-icon{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+color: #CFFF8D;
+display: flex;
+justify-content: center;
+align-items: center;
+float: right;
+padding: 0;
+text-decoration: none;
+}
+section input{
+border: none;
+outline: none;
+background: none;
+padding: 0;
+float: left;
+color: #CFFF8D;
+font-size: 16px;
+line-height: 40px;
+width: 0px;
+transition: 0.4s;
+}
+section input::placeholder{
+color: #cfd0ce;
+}
+
+search-box:hover > input{
+width: 240px;
+padding:0px 6px;
+}
+search-box:hover > #search-icon{
+background-color: #749F82;
+color: #CFFF8D;
+}
+/* ============ */
+
+child{
+backdrop-filter: blur(10px);
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+align-items: center;
+width: fit-content;
+}
+child img{
+width: 130px;
+height: auto;
+border-radius: 10px;
+margin-right: 30px;}
+
+child>p{
+font-size: 14px;
+width: 50%;
+color: #fff;
+letter-spacing: 1px;
+}
+
+button{
+background-color: #33423c;
+color:#fff;
+width: 200px;
+outline: none;
+padding: 9px 15px;
+border-style: solid;
+border-radius: 2px;
+align-self: center;
+margin-top: 20px;
+transition: 0.4s;
+border: 0;
+cursor: pointer;
+}
+
+button:hover{
+background-color: transparent;
+backdrop-filter: blur(10px);
+color: #fff;
+}
+
